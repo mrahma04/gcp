@@ -1,0 +1,8 @@
+imports:
+    - path: dm_temp_single_vm.py
+
+resources:
+    - name: python_template
+      type: dm_temp_single_vm.py
+      properties:
+        zone: us-central1-a
