@@ -2,4 +2,7 @@
 
 Various GCP-related Infrastructure as Code (IAC) projects.
 
-Deployment Manager has two components. A configuration YAML file and a resource templates which can be written in Python on Jinja.
+Deployment Manager has two components. 
+
+* A configuration YAML file 
+* Resource template files that  can be written in Python on Jinja.
