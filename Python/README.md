@@ -18,6 +18,6 @@ def generate_config(context):
 
 ```
 
-Get a quick list of available types in your region ([Link to full list](https://cloud.google.com/deployment-manager/docs/configuration/supported-resource-types))
+Get a quick list of available types in your region ([link to full list](https://cloud.google.com/deployment-manager/docs/configuration/supported-resource-types))
 
 `gcloud deployment-manager types list`
