@@ -4,7 +4,7 @@ def GenerateConfig(context):
     project_id = context.env['project']
 
     resources.append({
-        'name': 'vpc-1',
+        'name': context.env['name'],
         'type': 'compute.v1.network',
         'properties': {
             "autoCreateSubnetworks": False,

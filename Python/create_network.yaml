@@ -1,0 +1,6 @@
+imports:
+    - path: create_network.py
+
+resources:
+    - name: fox-vpc-1
+      type: create_network.py

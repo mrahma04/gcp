@@ -1,0 +1,8 @@
+imports:
+    - path: create_subnet.py
+
+resources:
+    - name: east1-subnet
+      type: create_subnet.py
+      properties:
+        region: us-east1
