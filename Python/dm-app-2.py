@@ -3,7 +3,7 @@ def GenerateConfig(context):
  
     for i in range(3):
         i = resources.append({
-            'name': 'vm-' + str(i) + '-' + context.env['name'],
+            'name': context.env['deployment'] + '-' + 'vm-' + str(i),
             'type': 'compute.v1.instance',
             'properties': {
                 'zone': context.properties['zone'],

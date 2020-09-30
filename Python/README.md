@@ -17,3 +17,7 @@ def generate_config(context):
     return {'resources': resources}
 
 ```
+
+To get a quick list of available types:
+
+`gcloud deployment-manager types list`
