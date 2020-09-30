@@ -5,8 +5,10 @@ def GenerateConfig(context):
 
     resources.append({
         'name': 'vpc-1',
-        'type':
-        'properties': 
+        'type': 'compute.v1.network',
+        'properties': {
+            
+        }
     })
 
     return {'resources': resources}
