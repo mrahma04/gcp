@@ -1,10 +1,10 @@
 imports:
-- path: dm-app-2.py
+- path: create_vms.py
 
 resources:
 # referenced inside Python template as context.env['name']
 - name: fox
-  type: dm-app-2.py
+  type: create_vms.py
   properties:
 # referenced inside Python template as context.properties['zone']
     zone: us-east1-b
