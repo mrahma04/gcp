@@ -1,0 +1,21 @@
+imports: 
+    - path: create_gcp_networks.py
+    - path: create_gcp_subnets.py
+    - path: create_gcp_instances.py
+
+resources:
+    - name: gcp-network
+      type: create_gcp_networks.py
+      properties:
+        region: us-east1
+    - name: gcp-subnet1
+      type: create_gcp_subnets.py
+      properties:
+        network: $(ref.gcp-network.selfLink)
+        region: us-east1
+    - name: gcp-vm
+      type: create_gcp_instances.py
+      properties:
+        zone: us-east1-b
+        nic1-subnet: $(ref.gcp-subnet1.selfLink)
+        machineType: n1-standard-1
